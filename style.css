@@ -1,4 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-/* font-family: 'Open Sans', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 /* font-family: 'Poppins', sans-serif; */
+:root{
+	--bg-header: hsl(193, 100%, 96%);
+	--btn-header: hsl(0, 0%, 100%);
+	--text-color: hsl(192, 100%, 9%);
+	--other-color: hsl(208, 11%, 55%);
+	--light-shadow: hsla(0, 0%, 0%, 10%);
+	--btn-section: hsl(322, 100%, 66%);
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: var(--text-color);
+
+}
+header {
+	background: var(--bg-header) url(./images/bg-hero-mobile.svg) top no-repeat;
+	display: flex;
+	flex-direction: column;
+
+}
+.logo {
+	height: 32px;
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 4vw;
+
+}
+
+.btn {
+	font-size: 11px;
+	padding: 1em 5em;
+	text-decoration-line: none;
+	border-radius: 100px;
+	font-weight: 700;
+}
+.btn-narrow {
+	color: var(--text-color);
+	background: var(--btn-header);
+	box-shadow: 3px 3px 9px var(--light-shadow);
+}
+.btn-wide {
+	background: var(--btn-section)
+}
+.intro {
+	display: flex;
+	flex-direction: row;
+}

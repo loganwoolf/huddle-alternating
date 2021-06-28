@@ -48,8 +48,8 @@ nav {
 .btn-wide {
 	background: var(--btn-section);
 	color: var(--btn-header);
-	display: block;
-	width: max-content;
+	display: block; /*move button out of paragraph*/
+	width: max-content; /*make button not paragraph wide*/
 	margin-top: 3em;
 }
 .intro {
@@ -65,5 +65,29 @@ nav {
 .intro-graphic {
 	max-height: 450px;
 	object-fit: contain;
-	justify-self: end;
+	justify-self: end; /*make graphic align with right edge of page, does not work with 100% width*/
+}
+
+.features {
+	display: flex;
+	flex-direction: column;
+	gap: 250px;
+	padding: 200px 0 0 200px;
+	border: 1px solid green;
+}
+.feature {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid green;
+}
+.reverse {
+	flex-direction: row-reverse;
+}
+.message {
+	max-width: 50ch;
+}
+.graphic {
+	height: 330px;
 }

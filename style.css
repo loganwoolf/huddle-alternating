@@ -73,20 +73,21 @@ nav {
 	flex-direction: column;
 	gap: 160px;
 	padding: 200px 5% 0 200px;
-	border: 1px solid green;
 }
 .feature {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid green;
 }
 .reverse {
 	flex-direction: row-reverse;
 }
 .message {
 	max-width: 50ch;
+}
+.message p {
+	opacity: 60%;
 }
 .graphic {
 	height: 330px;

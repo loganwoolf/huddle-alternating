@@ -71,8 +71,8 @@ nav {
 .features {
 	display: flex;
 	flex-direction: column;
-	gap: 250px;
-	padding: 200px 0 0 200px;
+	gap: 160px;
+	padding: 200px 5% 0 200px;
 	border: 1px solid green;
 }
 .feature {

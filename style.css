@@ -5,10 +5,11 @@
 	--bg-header: hsl(193, 100%, 96%);
 	--btn-header: hsl(0, 0%, 100%);
 	--text-color: hsl(192, 100%, 9%);
-	--other-color: hsl(208, 11%, 55%);
+	--footer-text-color: hsla(0, 0%, 100%, 100%); /*Not right yet*/
 	--light-shadow: hsla(0, 0%, 0%, 10%);
 	--dark-shadow: hsla(0, 0%, 0%, 20%);
 	--btn-section: hsl(322, 100%, 66%);
+	--bg-footer: hsl(192, 100%, 9%);
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -113,4 +114,19 @@ section {
 	left: 50%;
 	margin-left: -315px;
 	bottom: -100px;
+}
+
+footer {
+	padding: 160px 4% 0;
+	background: var(--bg-footer);
+	color: var(--footer-text-color)
+}
+.mail {
+	list-style-image: url(./images/icon-location.svg);
+}
+.phone {
+	list-style-image: url(./images/icon-phone.svg);
+}
+.email {
+	list-style-image: url(./images/icon-email.svg);
 }

@@ -7,6 +7,7 @@
 	--text-color: hsl(192, 100%, 9%);
 	--other-color: hsl(208, 11%, 55%);
 	--light-shadow: hsla(0, 0%, 0%, 10%);
+	--dark-shadow: hsla(0, 0%, 0%, 20%);
 	--btn-section: hsl(322, 100%, 66%);
 }
 body {
@@ -69,19 +70,21 @@ nav {
 }
 section {
 	position: relative;
-	border: 1px solid blue;
 }
 .features {
 	display: flex;
 	flex-direction: column;
-	gap: 160px;
-	padding: 200px 5% 0 200px;
+	gap: 40px;
+	padding: 200px 5% 200px 100px;
 }
 .feature {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	padding: 60px 25px 60px 130px;
+	box-shadow: 0 0 15px var(--light-shadow);
+	border-radius: 10px;
 }
 .reverse {
 	flex-direction: row-reverse;
@@ -103,7 +106,7 @@ section {
 	align-items: center;
 	width: 630px;
 	background: var(--btn-header);
-	box-shadow: 0 0 5px black;
+	box-shadow: 0 0 15px var(--light-shadow);
 	border-radius: 10px;
 	padding: 2em 5em;
 	position: absolute;

@@ -67,7 +67,10 @@ nav {
 	object-fit: contain;
 	justify-self: end; /*make graphic align with right edge of page, does not work with 100% width*/
 }
-
+section {
+	position: relative;
+	border: 1px solid blue;
+}
 .features {
 	display: flex;
 	flex-direction: column;
@@ -91,4 +94,20 @@ nav {
 }
 .graphic {
 	height: 330px;
+}
+.outset {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 630px;
+	background: var(--btn-header);
+	box-shadow: 0 0 5px black;
+	border-radius: 10px;
+	padding: 2em 5em;
+	position: absolute;
+	left: 50%;
+	margin-left: -315px;
+	bottom: -100px;
 }

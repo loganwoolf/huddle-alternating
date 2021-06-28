@@ -13,13 +13,16 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	color: var(--text-color);
-
+	max-width: 1440px;
 }
 header {
 	background: var(--bg-header) url(./images/bg-hero-mobile.svg) top no-repeat;
 	display: flex;
 	flex-direction: column;
 
+}
+header > * {
+	padding: 0 4%;
 }
 .logo {
 	height: 32px;
@@ -28,13 +31,11 @@ nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 4vw;
-
+	padding-top: 4%;
 }
-
 .btn {
-	font-size: 11px;
-	padding: 1em 5em;
+	font-size: 12px;
+	padding: 1.5em 5em;
 	text-decoration-line: none;
 	border-radius: 100px;
 	font-weight: 700;
@@ -45,9 +46,24 @@ nav {
 	box-shadow: 3px 3px 9px var(--light-shadow);
 }
 .btn-wide {
-	background: var(--btn-section)
+	background: var(--btn-section);
+	color: var(--btn-header);
+	display: block;
+	width: max-content;
+	margin-top: 3em;
 }
 .intro {
-	display: flex;
-	flex-direction: row;
+	padding-top: 4%;
+	display: grid;
+	grid-template-columns: 5fr 7fr;
+	align-items: center;
+	padding-bottom: 60px;
+}
+.intro-message {
+	padding-right: 30px;
+}
+.intro-graphic {
+	max-height: 450px;
+	object-fit: contain;
+	justify-self: end;
 }

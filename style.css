@@ -150,6 +150,9 @@ footer img {
 	color: var(--text-footer);
 	padding-top: 1.5em;
 }
+.social a {
+	color: var(--text-footer);
+}
 .social ion-icon {
 	padding: 7px;
 	border: 1px solid var(--text-footer);

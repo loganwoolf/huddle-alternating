@@ -137,3 +137,16 @@ footer img {
 .email {
 	list-style-image: url(./images/icon-email.svg);
 }
+.contact li {
+	padding: 0.7em;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+}
+.links a {
+	text-decoration-line: none;
+	color: var(--text-footer);
+	padding-top: 1.5em;
+}

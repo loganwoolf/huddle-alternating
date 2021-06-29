@@ -10,6 +10,7 @@
 	--dark-shadow: hsla(0, 0%, 0%, 20%);
 	--btn-section: hsl(322, 100%, 66%);
 	--bg-footer: hsl(192, 100%, 9%);
+	--text-footer: hsl(193, 100%, 96%);
 }
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -119,7 +120,13 @@ section {
 footer {
 	padding: 160px 4% 0;
 	background: var(--bg-footer);
-	color: var(--footer-text-color)
+	color: var(--text-footer);
+}
+footer img {
+	/* background: white; */
+	/* filter: grayscale(100%); */
+	filter: brightness(0%) saturate(100%) invert(99%) sepia(44%) saturate(1038%) hue-rotate(173deg) brightness(101%) contrast(103%);
+
 }
 .mail {
 	list-style-image: url(./images/icon-location.svg);

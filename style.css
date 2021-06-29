@@ -118,9 +118,19 @@ section {
 }
 
 footer {
-	padding: 160px 4% 0;
+	padding: 160px 8% 50px;
 	background: var(--bg-footer);
 	color: var(--text-footer);
+}
+.footer-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.footer-flex > * {
+	border: 1px solid pink;
+	flex-grow: 1;
 }
 footer img {
 	/* background: white; */
@@ -144,6 +154,8 @@ footer img {
 .links {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	height: 200px;
 }
 .links a {
 	text-decoration-line: none;

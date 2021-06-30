@@ -54,12 +54,12 @@ nav {
 .btn-wide {
 	background: var(--btn-section);
 	color: var(--btn-header);
-	padding: 1em 5em;
+	padding: 1.25em 5em;
 }
 .intro {
 	display: flex;
 	flex-direction: column;
-	padding: 0 2rem;
+	padding: 0 2rem 2rem;
 }
 h1 {
 	font-size: 26px;

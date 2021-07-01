@@ -45,11 +45,15 @@ nav {
 	text-decoration-line: none;
 	border-radius: 100px;
 	font-weight: 700;
+	transition: opacity 0.2s ease-in-out;
 }
 .btn-narrow {
 	color: var(--text-color);
 	background: var(--btn-header);
 	box-shadow: 3px 3px 9px var(--light-shadow);
+}
+.btn:hover {
+	opacity: 60%;
 }
 .btn-wide {
 	background: var(--btn-section);

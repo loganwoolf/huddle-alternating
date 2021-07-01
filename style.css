@@ -129,23 +129,21 @@ section {
 	font-size: 18px;
 }
 footer {
-	padding: 160px 8% 50px;
 	background: var(--bg-footer);
 	color: var(--text-footer);
-}
-.footer-content {
-	display: grid;
-	grid-template-columns: 2fr 2fr 1fr;
-	align-items: start;
+	padding: 10rem 0 0;
 }
 footer img {
-	/* background: white; */
-	/* filter: grayscale(100%); */
 	filter: brightness(0%) saturate(100%) invert(99%) sepia(44%) saturate(1038%) hue-rotate(173deg) brightness(101%) contrast(103%);
+	height: 26px;
+	padding: 0 1rem 1rem;
+}
+.footer-content {
+	display: flex;
+	flex-direction: column;
 }
 .contact {
-	padding-top: 0;
-	margin: 0;
+	margin: 0 0 3rem;
 }
 .mail {
 	list-style-image: url(./images/icon-location.svg);
@@ -160,30 +158,42 @@ footer img {
 	padding: 0.7em;
 }
 
-.links {
+/* .links {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto auto auto;
 	grid-auto-flow: column dense;
+} */
+.links {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin: 0 1rem 3rem;
 }
 .links a {
 	text-decoration-line: none;
 	color: var(--text-footer);
-	padding: 1em 1em;
+}
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 12px;
+	margin: 0 0 2rem;
 }
 .social a {
 	text-decoration-line: none;
 	color: var(--text-footer);
-	padding: 427px 0.5em 0 0;
 }
 .social ion-icon {
-	padding: 7px;
+	padding: 7px; /*controls icon size*/
 	border: 1px solid var(--text-footer);
 	border-radius: 25px;
 }
 .copy {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: center;
 	font-size: 11px;
+	padding: 0 0 3rem;
 }

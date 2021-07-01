@@ -19,7 +19,7 @@ body {
 	color: var(--text-color);
 	max-width: 375px;
 }
-h1,h2 {
+h2 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 }
@@ -54,25 +54,25 @@ nav {
 .btn-wide {
 	background: var(--btn-section);
 	color: var(--btn-header);
-	padding: 1.25em 5em;
+	padding: 1em 5em;
 }
 .intro {
 	display: flex;
 	flex-direction: column;
-	padding: 0 2rem 2rem;
-}
-h1 {
-	font-size: 26px;
+	padding: 0 2.2rem 2rem;
 }
 .intro-message {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding: 0 0 2rem;
+	padding: 0 0 3rem;
 }
-.intro-message > * {
-	margin: 0 0 2rem 0; /*add space below each element*/
+.intro-message > h2 {
+	margin: 0 0 1.5rem 0; /*add space below each element*/
+} 
+.intro-message > p {
+	margin: 0 0 2.5rem 0;
 }
 .intro-graphic {
 	max-width: 100%;
@@ -85,15 +85,13 @@ section {
 .features {
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
-	padding: 200px 5% 200px 100px;
+	/* gap: 40px; */
 }
 .feature {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column-reverse;
 	justify-content: space-between;
 	align-items: center;
-	padding: 60px 25px 60px 130px;
 	box-shadow: 0 0 15px var(--light-shadow);
 	border-radius: 10px;
 }

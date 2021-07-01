@@ -63,6 +63,7 @@ nav {
 .intro {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding: 0 2.2rem 2rem;
 }
 .intro-message {
@@ -81,8 +82,8 @@ nav {
 	max-width: 50ch;
 }
 .intro-graphic {
-	max-width: 100%;
-	object-fit: contain;
+	width: 100%;
+	max-width: 700px;
 	justify-self: end; /*make graphic align with right edge of page, does not work with 100% width*/
 }
 section {
@@ -115,6 +116,7 @@ section {
 }
 .graphic {
 	width: 85%;
+	max-width: 580px;
 }
 .outset {
 	box-sizing: border-box;

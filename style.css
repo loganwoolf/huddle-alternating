@@ -17,7 +17,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	color: var(--text-color);
-	max-width: 375px;
+	min-width: 375px;
 }
 h2 {
 	font-family: 'Poppins', sans-serif;
@@ -69,14 +69,16 @@ nav {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
+	text-align: center; /*left for desktop*/
 	padding: 0 0 3rem;
 }
 .intro-message > h2 {
 	margin: 0 0 1.5rem 0; /*add space below each element*/
+	max-width: 20ch;
 } 
 .intro-message > p {
 	margin: 0 0 2.5rem 0;
+	max-width: 50ch;
 }
 .intro-graphic {
 	max-width: 100%;
@@ -109,6 +111,7 @@ section {
 }
 .message p {
 	opacity: 50%;
+	max-width: 50ch;
 }
 .graphic {
 	width: 85%;

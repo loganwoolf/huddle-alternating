@@ -81,31 +81,33 @@ nav {
 }
 section {
 	position: relative;
+	/*For positioning of .outset*/
 }
 .features {
 	display: flex;
 	flex-direction: column;
-	/* gap: 40px; */
+	gap: 40px;
+	padding: 4rem 1rem 12rem;
+	/*area around cards*/
 }
 .feature {
 	display: flex;
 	flex-direction: column-reverse;
-	justify-content: space-between;
 	align-items: center;
 	box-shadow: 0 0 15px var(--light-shadow);
 	border-radius: 10px;
+	text-align: center;
+	font-size: 14px;
+	padding: 4rem 2rem 1rem;
 }
-.reverse {
-	flex-direction: row-reverse;
-}
-.message {
-	max-width: 50ch;
+.message h2 {
+	margin: 4rem 0 0rem;
 }
 .message p {
-	opacity: 60%;
+	opacity: 50%;
 }
 .graphic {
-	height: 330px;
+	width: 85%;
 }
 .outset {
 	box-sizing: border-box;
@@ -113,14 +115,14 @@ section {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 630px;
+	width: 350px;
 	background: var(--btn-header);
 	box-shadow: 0 0 15px var(--light-shadow);
-	border-radius: 10px;
+	border-radius: 15px;
 	padding: 2em 0;
 	position: absolute;
 	left: 50%;
-	margin-left: -315px;
+	margin-left: -175px;
 	bottom: -100px;
 }
 

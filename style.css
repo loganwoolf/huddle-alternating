@@ -87,7 +87,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	padding: 4rem 1rem 12rem;
+	padding: 4rem 1rem 15rem;
 	/*area around cards*/
 }
 .feature {
@@ -119,13 +119,15 @@ section {
 	background: var(--btn-header);
 	box-shadow: 0 0 15px var(--light-shadow);
 	border-radius: 15px;
-	padding: 2em 0;
+	padding: 2.5em 0;
 	position: absolute;
 	left: 50%;
 	margin-left: -175px;
 	bottom: -100px;
 }
-
+.outset h2 {
+	font-size: 18px;
+}
 footer {
 	padding: 160px 8% 50px;
 	background: var(--bg-footer);

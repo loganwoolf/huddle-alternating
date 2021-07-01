@@ -213,6 +213,9 @@ footer img {
 	header {
 		background: var(--bg-header) url(./images/bg-hero-desktop.svg) top no-repeat;
 	}
+	nav {
+		padding: 3rem 4rem 3rem;
+	}
 	.logo {
 		height: 32px;
 	}
@@ -221,14 +224,28 @@ footer img {
 	}
 	.intro {
 		flex-direction: row;
+		justify-content: space-between;
+		gap: 4ch;
+		padding: 0 4rem 2rem;
 	}
 	.intro-message {
-		flex-grow: 1;
+		text-align: unset;
+		align-items: flex-start;
 	}
 	.intro-graphic {
-		width: 60%;
+		width: 57%;
 	}
-
-
+	.intro-message > h2 {
+		font-size: 32px;
+	}
+	.features {
+		
+	}
+	.feature {
+		flex-direction: row;
+	}
+	.reverse {
+		flex-direction: row-reverse;
+	}
 
 }

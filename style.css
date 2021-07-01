@@ -211,6 +211,7 @@ footer img {
 
 @media only screen and (min-width: 800px) {
 	header {
+		font-size: 18px;
 		background: var(--bg-header) url(./images/bg-hero-desktop.svg) top no-repeat;
 	}
 	nav {
@@ -238,14 +239,28 @@ footer img {
 	.intro-message > h2 {
 		font-size: 32px;
 	}
-	.features {
-		
+	section {
+		padding: 0 3rem;
 	}
 	.feature {
 		flex-direction: row;
+		justify-content: space-between;
+		text-align: unset;
+		padding: 3rem 2rem 3rem 8rem;
+		gap: 2rem;
+		font-size: 18px;
 	}
 	.reverse {
 		flex-direction: row-reverse;
 	}
-
+	.graphic {
+		width: 35%;
+	}
+	.outset {
+		width: 650px;
+		margin-left: -325px;
+	}
+	.outset h2 {
+		font-size: 24px;
+	}
 }

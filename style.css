@@ -181,6 +181,7 @@ footer img {
 .links a {
 	text-decoration-line: none;
 	color: var(--text-footer);
+	min-width: max-content;
 }
 .links a:hover {
 	text-decoration-line: underline;

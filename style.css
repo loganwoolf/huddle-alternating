@@ -196,6 +196,10 @@ footer img {
 	border: 1px solid var(--text-footer);
 	border-radius: 25px;
 }
+.social ion-icon:hover {
+	color: var(--btn-section);
+	border: 1px solid var(--btn-section)
+}
 .copy {
 	display: flex;
 	flex-direction: column;
@@ -266,6 +270,9 @@ footer img {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+	.footer-content * {
+		outline: 1px solid pink;
+	}
 	.contact {
 		flex-grow: 3;
 	}
@@ -280,5 +287,8 @@ footer img {
 		flex-grow: 2;
 		justify-content: start;
 		height: min-content;
+	}
+	.copy {
+		align-items: flex-end;
 	}
 }
